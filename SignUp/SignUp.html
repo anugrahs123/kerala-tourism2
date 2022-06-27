@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log In</title>
+    <link rel="stylesheet" href="./../css/log.css">
+    <link rel="stylesheet" href="./../css/bootstrap.min.css">
+    <style>    
+      body {    
+        position: relative  ;
+        background-image: url("sign.jpg");  
+        background-color: lightgray;  
+        }  
+      </style>   
+</head>
+<body background="./../images/images.jpeg">
+
+
+  <div class="row" >
+    <div class="col-lg-3"></div>
+    <div class="col-lg-8 signs">
+        <form class="row g-3" id="form" action="./../Login/LogIn.html">
+            <center><h2>Sign Up</h2></center>
+            <div class="col-md-8">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="eg:abc@mail.com" required>
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4" onkeyup="return passwordChanged1();" required>
+              <span id="strength1">Type Password</span>
+            </div>
+            <div class="col-md-6">
+              <label for="inputPhone" class="form-label">Phone</label>
+              <input type="text" class="form-control" id="inputphone" onchange="pattern3();" placeholder="xxx-xxx-xxxx">
+              <span id="error"></span>
+            </div>
+            <!-- <span style="margin-left: 51%;" id="phone5">valid or not!!!</span> -->
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select" required>
+                <option selected>Choose...</option>
+                <option>Kerala</option>
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip" required>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+          </div>
+
+
+    <script src="./sign1.js"></script>
+</body>
+</html>

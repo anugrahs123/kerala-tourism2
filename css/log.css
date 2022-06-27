@@ -1,0 +1,12 @@
+.log{
+    border: 2px solid black;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+    padding: 30px;
+    align-content: center;
+    background-color: lightblue;
+}
+.log h2{
+    text-align: center;
+}
